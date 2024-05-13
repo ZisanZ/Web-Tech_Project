@@ -1,0 +1,126 @@
+.edit-customer-table
+{
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin-left: 400px;
+    margin-right: 50px;
+    margin-top: 11.9rem;
+    background-color: rgb(27, 99, 146);
+    margin-bottom: 20px;
+}
+.edit-customer-table h2
+{
+    padding-top: 20px;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+.edit-customer-table table
+{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+.edit-customer-table tbody td
+{
+    height: 2.8rem;
+    color: #333
+}
+.edit-customer-table tbody tr:last-child td
+{
+    border: none;
+}
+.edit-customer-table button
+{
+    text-align: center;
+    margin: 1rem auto;
+    width: 40%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold; 
+}
+.edit-customer-table button:hover
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.475);
+}
+.edit-customer-table .editcustomerSubmit-button:active,
+.editcustomerBack-button:active
+{
+    opacity: 0.85;
+}
+.edit-customer-table .editcustomerSubmit-button
+{
+    width: 20%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold;
+    margin-left: 290px;
+}
+.edit-customer-table .editcustomerBack-button
+{
+    width: 20%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold;
+    margin-left: 310px;
+}
+.edit-customer-table .editcustomerSubmit-button:hover,
+.editcustomerBack-button:hover
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.475);
+}
+.edit-customer-table .editcustomerBack-button:active,
+.editcustomerBack-button:active
+{
+    opacity: 0.85;
+}
+.edit-customer-table input
+{
+    background-color: rgb(50, 61, 78);
+    height: 28px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-left: 12px;
+    color: white;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.edit-customer-table input::placeholder
+{
+    font-family: Public Sans;
+    font-size: 16px;
+}
+.edit-customer-table-id-box
+{
+    margin-left: 60px;
+    width: 530px;
+}
+.edit-customer-table-name-box
+{
+    margin-left: 33px;
+    width: 530px;
+}
+.edit-customer-table-email-box
+{
+    margin-left: 35px;
+    width: 530px;
+}
+.edit-customer-table-password-box
+{
+    margin-left: 4px;
+    width: 530px;
+}

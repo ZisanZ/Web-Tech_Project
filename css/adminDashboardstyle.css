@@ -1,0 +1,471 @@
+body
+{
+    margin: 0;
+    width: 100vw;
+    font-family: Public Sans;
+    font-size: bold;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+}
+p
+{
+    font-family: Public Sans;
+    font-weight: bold;
+    color: white;
+}
+a
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+/*header*/
+.header
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(25, 28, 31);
+    font-family: Public Sans;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-section
+{
+    align-items: center;
+}
+.main-icon img
+{
+    margin-left: 150px;
+    height: 30px;
+    width: 30px;
+    margin-top: 3.8px;
+}
+.main-brand
+{
+    margin-left: 10px;
+}
+.middle-section
+{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 45%;
+    min-width: 500px;
+    max-width: 2000px;
+    align-items: center;
+    display: flex;
+}
+.dashboard-searchbar
+{
+    flex: 1;
+    height: 34px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 16px;
+    font-family: Public Sans;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: rgb(50, 61, 78);
+    border: 0px;
+    color: white;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.dashboard-searchbar::placeholder
+{
+    font-family: Public Sans;
+    font-size: 16px;
+}
+.right-section
+{
+    width: 30%;
+    min-width: 200px;
+    max-width: 500px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.message-button-box img
+{
+    margin-right: 100px;
+    margin-left: 20px;
+    margin-top: 3.8px;
+    height: 35px;
+    width: 35px;
+}
+.account-button
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(25, 28, 31);
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 200px;
+    transition: box-shadow 0.15s;
+    vertical-align: top;
+    height: 35px;
+    width: 130px;
+}
+.account-button:hover
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+/*breadcrunch*/
+.breadcrunch
+{
+    display: flex;
+    background-color: rgb(27, 99, 146);
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.breadcrunch2
+{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 120px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sidebar
+{
+    background-color: rgb(27, 99, 146);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 150px;
+    width: 300px;
+    left: 70px;
+    right: 0px;
+    margin-top: 40px;
+    border-radius: 20px;
+    font-family: Public Sans;
+}
+.menu-box,
+.management-box,
+.administrator-box
+{
+    display: flex;
+    margin-left: 25px;
+}
+.dashboard-button-box, 
+.analytics-button-box,
+.product-button-box,
+.customer-button-box,
+.order-button-box,
+.settings-button-box,
+.logout-button-box
+{
+    color: white;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.dashboard-button
+{
+    background-color: rgb(27, 99, 146);
+    color: white;
+    border: none;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 116px;
+    padding-right: 104px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-size: medium;
+    font-weight: bold;
+}
+.analytics-button
+{
+    background-color: rgb(27, 99, 146);
+    color: white;
+    border: none;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 116px;
+    padding-right: 115px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-size: medium;
+    font-weight: bold;
+}
+.product-button
+{
+    background-color: rgb(27, 99, 146);
+    color: white;
+    border: none;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 116px;
+    padding-right: 117px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-size: medium;
+    font-weight: bold;
+}
+.customer-button
+{
+    background-color: rgb(27, 99, 146);
+    color: white;
+    border: none;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 116px;
+    padding-right: 104px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-size: medium;
+    font-weight: bold;
+}
+.order-button
+{
+    background-color: rgb(27, 99, 146);
+    color: white;
+    border: none;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 116px;
+    padding-right: 133px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-size: medium;
+    font-weight: bold;
+}
+.settings-button
+{
+    background-color: rgb(27, 99, 146);
+    color: white;
+    border: none;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 116px;
+    padding-right: 122px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.logout-button
+{
+    background-color: rgb(27, 99, 146);
+    color: white;
+    border: none;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 116px;
+    padding-right: 129px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-size: medium;
+    font-weight: bold;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.dashboard-button:hover,
+.analytics-button:hover,
+.product-button:hover,
+.customer-button:hover,
+.order-button:hover,
+.settings-button:hover,
+.logout-button:hover
+{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+.dashboard-button-box img
+{
+    top: 243px;
+    left: 145px;
+    position: fixed;
+    padding-right: 10px;
+    height: 35px;
+    width: 35px;
+}
+.analytics-button-box img
+{
+    top: 283px;
+    left: 145px;
+    position: fixed;
+    padding-right: 10px;
+    height: 35px;
+    width: 35px;
+}
+.product-button-box img
+{
+    top: 372px;
+    left: 145px;
+    position: fixed;
+    padding-right: 10px;
+    height: 35px;
+    width: 35px;
+}
+
+.customer-button-box img
+{
+    top: 412px;
+    left: 145px;
+    position: fixed;
+    padding-right: 10px;
+    height: 35px;
+    width: 35px;
+}
+.order-button-box img
+{
+    top: 451px;
+    left: 145px;
+    position: fixed;
+    padding-right: 10px;
+    height: 35px;
+    width: 35px;
+}
+.settings-button-box img
+{
+    top: 540px;
+    left: 145px;
+    position: fixed;
+    padding-right: 10px;
+    height: 35px;
+    width: 35px;
+}
+.logout-button-box img
+{
+    top: 580px;
+    left: 145px;
+    position: fixed;
+    padding-right: 10px;
+    height: 35px;
+    width: 35px;
+}
+main
+{
+    margin-top: 12.6rem;
+    margin-left: 25rem;
+}
+.insights
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+.insights > div
+{
+    background-color: rgb(27, 99, 146);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -12px;
+    transition: all 300ms ease;
+}
+.insights > div span
+{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+.insights > div.sales span
+{
+    background-color: rgb(118, 80, 187);
+}
+.insights > div.expenses span
+{
+    background-color: rgb(80, 187, 89);
+}
+.insights > div.income span
+{
+    background-color: rgb(187, 158, 80);
+}
+.insights > div .middle
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.insights h3
+{
+    margin: 1rem 0 0 6rem;
+    font-size: 1rem;
+}
+.insights .progress
+{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+.insights svg
+{
+    width: 7rem;
+    height: 5.5rem;
+}
+.insights svg circle
+{
+    fill: none;
+    stroke: white;
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+}
+.insights .sales svg circle
+{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+.insights .expenses svg circle
+{
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+.insights .income svg circle
+{
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+}
+.insights .progress .number
+{
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.insights small
+{
+    margin-top: 1.3rem;
+    display: block;
+}
+.sales-graph
+{
+    height: 2px;
+    width: 2px;
+}

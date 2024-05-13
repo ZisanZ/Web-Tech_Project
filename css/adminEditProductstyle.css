@@ -1,0 +1,186 @@
+.edit-product-table
+{
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin-left: 400px;
+    margin-right: 50px;
+    margin-top: 11.9rem;
+    background-color: rgb(27, 99, 146);
+    margin-bottom: 20px;
+}
+.edit-product-table h2
+{
+    padding-top: 20px;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+.edit-product-table table
+{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    font-weight: bold;
+}
+.edit-product-table tbody td
+{
+    height: 2.8rem;
+    color: #333
+}
+.edit-product-table tbody tr:last-child td
+{
+    border: none;
+}
+.edit-product-table button
+{
+    text-align: center;
+    margin: 1rem auto;
+    width: 40%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold; 
+}
+.edit-product-table button:hover
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.475);
+}
+.edit-product-table .editproductUpdate-button:active,
+.editproductBack-button:active
+{
+    opacity: 0.85;
+}
+.edit-product-table .editproductUpdate-button
+{
+    width: 20%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold;
+    margin-left: 290px;
+}
+.edit-product-table .editproductBack-button
+{
+    width: 20%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold;
+    margin-left: 310px;
+}
+.edit-product-table .editproductUpdate-button:hover,
+.editproductBack-button:hover
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.475);
+}
+.edit-product-table .editproductUpdate-button:active,
+.editproductBack-button:active
+{
+    opacity: 0.85;
+}
+.edit-product-table-id-box
+{
+    background-color: rgb(50, 61, 78);
+    height: 28px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-left: 12px;
+    color: white;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    margin-left: 60px;
+    width: 560px;
+}
+.edit-product-table-id-box::placeholder
+{
+    font-family: Public Sans;
+    font-size: 16px;
+}
+.edit-product-table-name-box
+{
+    background-color: rgb(50, 61, 78);
+    height: 28px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-left: 12px;
+    color: white;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    margin-left: 32px;
+    width: 560px;
+}
+.edit-product-table-name-box::placeholder
+{
+    font-family: Public Sans;
+    font-size: 16px;
+}
+.edit-product-table-detail-box
+{
+    background-color: rgb(50, 61, 78);
+    height: 28px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-left: 12px;
+    color: white;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    margin-left: 36px;
+    width: 560px;
+}
+.edit-product-table-detail-box::placeholder
+{
+    font-family: Public Sans;
+    font-size: 16px;
+}
+.edit-product-table-price-box
+{
+    background-color: rgb(50, 61, 78);
+    height: 28px;
+    border-style: solid;
+    border-radius: 20px;
+    padding-left: 12px;
+    color: white;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    margin-left: 36px;
+    width: 560px;
+}
+.edit-product-table-price-box::placeholder
+{
+    font-family: Public Sans;
+    font-size: 16px;
+}
+.edit-product-table-image01-box,
+.edit-product-table-image02-box,
+.edit-product-table-image03-box
+{
+    margin-left: 38px;
+    width: 473px;
+    font-family: Public Sans;
+    font-size: 16px;
+    background: rgb(50, 61, 78);;
+    color: white;
+    border-radius: 50px;
+    outline: #333;
+}
+::-webkit-file-upload-button
+{
+    color: white;
+    background-color: rgb(27, 99, 146);
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    outline: none;
+}
+::-webkit-file-upload-button:hover
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.475);
+}

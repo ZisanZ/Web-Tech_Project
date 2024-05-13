@@ -1,0 +1,99 @@
+.product-table
+{
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin-left: 400px;
+    margin-right: 50px;
+    margin-top: 11.9rem;
+    background-color: rgb(27, 99, 146);
+    margin-bottom: 20px;
+}
+.product-table h2
+{
+    padding-top: 20px;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+.product-table table
+{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-table tbody td
+{
+    height: 2.8rem;
+    width: 1rem;
+    border-bottom: 1px solid #333;
+    color: #333
+}
+.product-table tbody tr:last-child td
+{
+    border: none;
+}
+.product-table button
+{
+    text-align: center;
+    margin: 1rem auto;
+    width: 40%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold; 
+}
+.product-table button
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.475);
+}
+.product-table .productAdd-button:active,
+.productBack-button:active
+{
+    opacity: 0.85;
+}
+.product-table .productAdd-button
+{
+    width: 20%;
+    background-color: white;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold;
+    margin-left: 220px;
+}
+.product-table .productBack-button
+{
+    width: 20%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold;
+}
+.product-table .productAdd-button:hover,
+.productBack-button:hover
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.475);
+}
+.product-table .productAdd-button:active,
+.productBack-button:active
+{
+    opacity: 0.85;
+}
+.product-table img
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+}

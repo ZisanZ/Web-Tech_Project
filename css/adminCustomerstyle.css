@@ -1,0 +1,94 @@
+.customer-table
+{
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin-left: 400px;
+    margin-right: 50px;
+    margin-top: 11.9rem;
+    background-color: rgb(27, 99, 146);
+    margin-bottom: 20px;
+}
+.customer-table h2
+{
+    padding-top: 20px;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+.customer-table table
+{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.customer-table tbody td
+{
+    height: 2.8rem;
+    border-bottom: 1px solid #333;
+    color: #333
+}
+.customer-table tbody tr:last-child td
+{
+    border: none;
+}
+.customer-table button
+{
+    text-align: center;
+    margin: 1rem auto;
+    width: 40%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold; 
+}
+.customer-table button
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.475);
+}
+.customer-table .customerAdd-button:active,
+.customerBack-button:active
+{
+    opacity: 0.85;
+}
+.customer-table .customerAdd-button
+{
+
+    width: 20%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold;
+    margin-left: 220px;
+}
+.customer-table .customerBack-button
+{
+
+    width: 20%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold;
+}
+.customer-table .customerAdd-button:hover,
+.customerBack-button:hover
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.475);
+}
+.customer-table .customerAdd-button:active,
+.customerBack-button:active
+{
+    opacity: 0.85;
+}

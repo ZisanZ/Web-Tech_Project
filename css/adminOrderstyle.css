@@ -1,0 +1,96 @@
+.order-table
+{
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin-left: 400px;
+    margin-right: 50px;
+    margin-top: 11.9rem;
+    background-color: rgb(27, 99, 146);
+    margin-bottom: 20px;
+}
+.order-table h2
+{
+    padding-top: 20px;
+    margin-bottom: 0.8rem;
+    color: white;
+}
+.order-table table
+{
+    background-color: white;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.order-table p
+{
+    color: black;
+}
+.order-table tbody td
+{
+    height: 2.8rem;
+    width: 1rem;
+    border-bottom: 1px solid #333;
+    color: #333
+}
+.order-table tbody tr:last-child td
+{
+    border: none;
+}
+.order-table button
+{
+    text-align: center;
+    margin: 1rem auto;
+    width: 20%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold; 
+}
+.order-table button:hover
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.475);
+}
+.order-table button:active
+{
+    opacity: 0.85;
+}
+.order-table input
+{
+    text-align: center;
+    margin: 1rem auto;
+    width: 20%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: Public Sans;
+    font-weight: bold;
+}
+.order-table input:hover
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.475);
+}
+.order-table input:active
+{
+    opacity: 0.85;
+}
+.order-table select
+{
+    background-color: rgb(50, 61, 78);
+    height: 40px;
+    border-style: solid;
+    border-radius: 50px;
+    padding-left: 12px;
+    color: white;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+    font-family: Public Sans;
+}
