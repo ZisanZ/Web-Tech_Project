@@ -7,38 +7,8 @@ else if(isset($_GET['out'])){
 	session_destroy();
 	header("location:adminLogin.php");
 }
-?>
-<?php
 include('../Models/customerDatabase.php');
-
-if (isset($_GET['update_customer_id'])) {
-    $id = $_GET['update_customer_id'];
-    $sql = "SELECT * FROM `users` WHERE `id` = $id";
-    $result = mysqli_query($connect, $sql);
-    $r = mysqli_fetch_assoc($result);
-    $customerID = $r['id'];
-    $customerName = $r['name'];
-    $customerEmail = $r['email'];
-    $customerPassword = $r['password'];
-}
-
-if (isset($_POST['update'])) {
-    $customerID = $_POST['customerID'];
-    $customerName = $_POST['customerName'];
-    $customerEmail = $_POST['customerEmail'];
-    $customerPassword = $_POST['customerPassword'];
-
-    $sql = "UPDATE `users` SET `name` = '$customerName', `email` = '$customerEmail', `password` = '$customerPassword' WHERE `id` = $id";
-
-    if (mysqli_query($connect, $sql)) {
-        header('location:adminCustomers.php');
-        exit();
-    } else {
-        die(mysqli_error($connect));
-    }
-}
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -146,7 +116,7 @@ if (isset($_POST['update'])) {
                         <tbody>
                             <tr><td>Customer ID: <input class="edit-customer-table-id-box" type="number" name="customerID" value="<?php echo $customerID; ?>" placeholder="Enter Customer ID" autocomplete="off"><br></td><tr>
                             <tr><td>Customer Name: <input class="edit-customer-table-name-box" type="text" name="customerName" value="<?php echo $customerName; ?>" placeholder="Enter Customer Name" autocomplete="off"><br></td></tr>
-                            <tr><td>Customer Email: <input class="edit-customer-table-email-box" type="text" name="customerEmail" value="<?php echo $customerEmail; ?>" placeholder="Enter Customer Email" autocomplete="off"><br></td></tr>
+                            <tr><td>Customer Email: <input class="edit-customer-table-email-box" type="email" name="customerEmail" value="<?php echo $customerEmail; ?>" placeholder="Enter Customer Email" autocomplete="off"><br></td></tr>
                             <tr><td>Customer Password: <input class="edit-customer-table-password-box" type="password" name="customerPassword" value="<?php echo $customerPassword; ?>" placeholder="Enter Customer Password" autocomplete="off"><br></td></tr>
                             <tr><td><button class="editcustomerSubmit-button" name="update">Update</button><br></td></tr>
                         </tbody>

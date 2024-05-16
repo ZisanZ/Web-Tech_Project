@@ -7,51 +7,7 @@ else if(isset($_GET['out'])){
 	session_destroy();
 	header("location:adminLogin.php");
 }
-?>
-<?php
-   include('../Models/productDatabase.php');
-   $result=mysqli_query($connect,$sql);
-
-   if (isset($_POST['submit'])) 
-   {
-        if (!empty($_POST['id']) && !empty($_POST['name']) && !empty($_POST['details']) && !empty($_POST['price'])) 
-        { 
-            $productID = $_POST['id'];
-            $productName = $_POST['name'];
-            $productDetail = $_POST['details'];
-            $productPrice = $_POST['price'];
-
-            $productImage1 = $_FILES['image_01']['name'];
-            $productImage1_tmp_name = $_FILES['image_01']['tmp_name'];
-            $productImage1_folder = '../uploaded_img/'.$productImage1;
-
-            $productImage2 = $_FILES['image_02']['name'];
-            $productImage2_tmp_name = $_FILES['image_02']['tmp_name'];
-            $productImage2_folder = '../uploaded_img/'.$productImage2;
-
-            $productImage3 = $_FILES['image_03']['name'];
-            $productImage3_tmp_name = $_FILES['image_03']['tmp_name'];
-            $productImage3_folder = '../uploaded_img/'.$productImage3;
-        
-            $sql = "INSERT INTO products VALUES ('$productID', '$productName', '$productDetail', '$productPrice', '$productImage1', '$productImage2', '$productImage3')";
-            
-            if (mysqli_query($connect, $sql)) 
-            {   
-                move_uploaded_file($productImage1_tmp_name, $productImage1_folder);
-                move_uploaded_file($productImage2_tmp_name, $productImage2_folder);
-                move_uploaded_file($productImage3_tmp_name, $productImage3_folder);
-                header('location:adminProducts.php');
-            } 
-            else 
-            {    
-                die(mysqli_error($connect));
-            }
-        } 
-        else 
-        {      
-            echo "Fill Up The Form First";
-        }
-   }  
+include('../Models/productDatabase.php');  
 ?>
 <!DOCTYPE html>
 <html>

@@ -1,26 +1,16 @@
-<?php
-session_start();
-if(empty($_SESSION['adminId'])){
-	header("location:adminLogin.php");
-}
-else if(isset($_GET['out'])){
-	session_destroy();
-	header("location:adminLogin.php");
-}
-include('../Models/customerDatabase.php');
-?>
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Customer Add</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="../css/adminDashboardstyle.css">
-    <link rel="stylesheet" href="../css/adminAddCustomerstyle.css">
-  </head>
-  <body>
+   <head>
+      <title>Dashboard</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital@0;1&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+      <link rel="stylesheet" href="../css/adminDashboardstyle.css">
+   </head>
+
+   <body>
+      <div>
          <!--header-->
             <div class="header" style="
             display: flex;">
@@ -108,20 +98,5 @@ include('../Models/customerDatabase.php');
                </aside>
             </div>
       </div>
-      <div class="add-customer-table">
-        <h2>Add Customer</h2>
-            <form method="post">
-                <table>
-                    <tbody>
-                        <tr><td>Customer ID: <input class="add-customer-table-id-box" type="number" name="customerID" placeholder="Enter Customer ID" autocomplete="off"><br></td><tr>
-                        <tr><td>Customer Name: <input class="add-customer-table-name-box" type="text" name="customerName" placeholder="Enter Customer Name" autocomplete="off"><br></td></tr>
-                        <tr><td>Customer Email: <input class="add-customer-table-email-box" type="email" name="customerEmail" placeholder="Enter Customer Email" autocomplete="off"><br></td></tr>
-                        <tr><td>Customer Password: <input class="add-customer-table-password-box" type="password" name="customerPassword" placeholder="Enter Customer Password" autocomplete="off"><br></td></tr>
-                        <tr><td><button class="addcustomerSubmit-button" name="submit">Submit</button><br></td></tr>
-                    </tbody>
-                </table>
-            </form>
-                <a href="adminCustomers.php"><button class="addcustomerBack-button">Back</button></a>
-      </div>
-  </body>
+   </body>
 </html>

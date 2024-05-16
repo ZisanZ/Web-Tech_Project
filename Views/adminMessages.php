@@ -7,35 +7,7 @@ else if(isset($_GET['out'])){
 	session_destroy();
 	header("location:adminLogin.php");
 }
-?>
-<?php
 include('../Models/messageDatabase.php');
-
-if(isset($_GET['delete']))
- {
-   $delete_id = $_GET['delete'];
-   $sql = "DELETE FROM `messages` WHERE id = $delete_id";
-   if(mysqli_query($connect, $sql)) 
-   {
-      header('location: adminMessages.php');
-      exit();
-   } 
-   else 
-   {
-      echo "Error deleting message: " . mysqli_error($connect);
-   }
-}
-
-$sql = "SELECT * FROM `messages`";
-$result = mysqli_query($connect, $sql);
-$messages = [];
-if(mysqli_num_rows($result) > 0) 
-{
-   while($row = mysqli_fetch_assoc($result)) 
-   {
-      $messages[] = $row;
-   }
-}
 ?>
 
 <!DOCTYPE html>
@@ -147,7 +119,6 @@ if(mysqli_num_rows($result) > 0)
                         <td>
                             <?php if(!empty($messages)) : ?>
                                 <?php foreach($messages as $message) : ?>
-                                        <p>User ID: <?= $message['user_id']; ?></p>
                                         <p>Name: <?= $message['name']; ?></p>
                                         <p>Email: <?= $message['email']; ?></p>
                                         <p>Number: <?= $message['number']; ?></p>

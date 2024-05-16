@@ -1,33 +1,4 @@
 <?php
-include('../Models/orderDatabase.php');
-
-$query = "SELECT * FROM orders";
-$result = mysqli_query($connect, $query);
-
-if (isset($_POST['update_payment'])) 
-{
-    $order_id = $_POST['order_id'];
-    $payment_status = $_POST['payment_status'];
-    $update_query = "UPDATE orders SET payment_status = '$payment_status' WHERE id = '$order_id'";
-    mysqli_query($connect, $update_query);
-    $message = 'Payment status updated!';
-    
-    header('location:adminOrders.php');
-    exit;
-}
-
-if (isset($_GET['delete'])) 
-{
-    $delete_id = $_GET['delete'];
-    $delete_query = "DELETE FROM orders WHERE id = '$delete_id'";
-    mysqli_query($connect, $delete_query);
-
-    header('location:adminOrders.php');
-    exit;
-}
-
-?>
-<?php
 session_start();
 if(empty($_SESSION['adminId'])){
 	header("location:adminLogin.php");
@@ -36,6 +7,7 @@ else if(isset($_GET['out'])){
 	session_destroy();
 	header("location:adminLogin.php");
 }
+include('../Models/orderDatabase.php');
 ?>
 <!DOCTYPE html>
 <html>

@@ -29,7 +29,7 @@
                 <button name="adminLogin">Login</button>
             </div>
             <div>
-                <a class="back" href="home.php">Back</a>
+                <a class="back" href="#">Back</a>
             </div>
         </div>
     </form>
